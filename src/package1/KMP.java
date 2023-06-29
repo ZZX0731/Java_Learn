@@ -3,7 +3,7 @@ package package1;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
-// 字符串的模式匹配算法
+// 瀛楃涓茬殑妯″紡鍖归厤绠楁硶
 public class KMP {
     public static void main(String[] args) {
         String S = "abaababaababaabc";
@@ -13,7 +13,7 @@ public class KMP {
         System.out.println(kmp(S,T,getNextval(T)));
     }
 
-    // 朴素模式匹配
+    // 鏈寸礌妯″紡鍖归厤
     public static int index(@NotNull String S, @NotNull String T){
         int i = 0;
         while(i <= S.length() - T.length()){
@@ -41,7 +41,7 @@ public class KMP {
         return -1;
     }
 
-    // 获取模式串的next数组
+    // 鑾峰彇妯″紡涓茬殑next鏁扮粍
     @Contract(pure = true)
     private static int @NotNull [] getNext(@NotNull String T){
         int[] next = new int[T.length()];
@@ -59,7 +59,7 @@ public class KMP {
         return next;
     }
 
-    // 获取模式串的nextval数组,kmp的优化思路
+    // 鑾峰彇妯″紡涓茬殑nextval鏁扮粍,kmp鐨勪紭鍖栨�濊矾
     @Contract(pure = true)
     private static int @NotNull [] getNextval(@NotNull String T){
         int[] nextval = new int[T.length()];
