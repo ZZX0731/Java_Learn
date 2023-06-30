@@ -1,7 +1,5 @@
 package package1;
 
-import com.sun.javaws.IconUtil;
-
 import java.util.Random;
 import java.util.Scanner;
 
