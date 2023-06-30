@@ -13,7 +13,7 @@ public class arrayDemo {
             a[i] = number;
             sum1 = sum1 + number;
         }
-        System.out.println(sum1);
+        System.out.println("所有数据的和" + sum1);
         int avg=0;
         avg = sum1 / 10;
         int sum2 = 0;
@@ -23,8 +23,8 @@ public class arrayDemo {
                 sum2++;
             }
         }
-        System.out.println(avg);
-        System.out.println(sum2);
+        System.out.println("平均数" + avg);
+        System.out.println("有" + sum2 + "个数据比平均数小");
 
     }
 
