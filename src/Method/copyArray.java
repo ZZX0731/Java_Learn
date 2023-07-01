@@ -4,8 +4,8 @@ public class copyArray {
     public static void main(String[] args) {
         int[] arr = {123,124,14141,3433435,2};
         int[] copyArr = copy0fRange(arr,2 , 4);
-        for (int i = 0; i < copyArr.length; i++) {
-            System.out.print(copyArr[i] + " ");
+        for (int j : copyArr) {
+            System.out.print(j + " ");
         }
     }
     //将数组中的(from~to)元素复制到新的数组
