@@ -1,7 +1,5 @@
 package package1;
 
-import java.util.Scanner;
-
 public class methodDemo {
     public static void main(String[] args) {
         //掌握方法定义和调用格式
@@ -16,7 +14,6 @@ public class methodDemo {
         }
     }
     public static int getS(int num1, int num2){
-        int s = num1 * num2;
-       return s;
+        return num1 * num2;
     }
 }
